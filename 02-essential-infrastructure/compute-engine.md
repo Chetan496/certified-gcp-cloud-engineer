@@ -38,7 +38,7 @@
 ## Charges for Stopped Instances
 
 - When a VM is terminated, we do not pay for CPU and memory resources
-- We are charger for attached disks a allocated IP addresses
+- We are charged for attached disks a allocated IP addresses
 
 ## Compute Options
 
