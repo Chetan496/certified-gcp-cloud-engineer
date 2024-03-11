@@ -10,6 +10,7 @@
 - Compute resources scale as needed to run as many instances of Cloud Functions as needed without you having to do anything to control scaling
 - The execution of one function is independent of all others. The lifecycles of Cloud Functions are not dependent on each other
 - By default, the functions will time out after one minute, although we can set the timeout for as long as 9 minutes
+- Note: In Cloud Functions (2nd gen), the maximum timeout duration is 60 minutes (3600 seconds) for HTTP functions and 9 minutes (540 seconds) for event-driven functions.
 - Cloud Function Runtimes:
     - NodeJS
     - Java
@@ -17,3 +18,4 @@
     - Ruby
     - Python
     - Go
+    - .NET Core
