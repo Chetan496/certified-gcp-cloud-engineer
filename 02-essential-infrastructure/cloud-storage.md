@@ -26,6 +26,7 @@
         - `gsutil` command line
         - JSON or XML APIs
 - Cloud Storage does not support concurrency and locking
+- Object retention locking is supported - meaning you can define the duration for which the object should not be deleted/replaced
 - If multiple clients are writing the same file, the lst data written to the file is persisted
 - Object storage does not provide a file system, buckets are analogous to directories, but they are not true directories with support for subdirectories
 - **Cloud Storage Fuse**: it is an open source project, which provides a way to mount a bucket as a file system on Linux and Mac
