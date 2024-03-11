@@ -116,6 +116,7 @@
 
 ## Uniform Bucket-Level Access
 
+-  Read about Uniform Bucket-level Access [here](https://cloud.google.com/storage/docs/uniform-bucket-level-access)
 - In order to support a uniform permissioning system, Cloud Storage has uniform bucket-level access
 - Using this feature on a bucket disables ACLs for all Cloud Storage resources in the bucket; access to Cloud Storage resources then is granted exclusively through IAM
 - After you enable uniform bucket-level access, you can reverse your decision for 90 days
