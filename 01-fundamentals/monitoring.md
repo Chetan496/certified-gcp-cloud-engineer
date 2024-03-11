@@ -1,7 +1,7 @@
 # Monitoring
 
-## Stackdriver
-
+## Cloud Logging
+- Was previously known as StackDriver. Now renamed to Cloud Logging
 - It is the tool provided by GCP for monitoring, logging and debugging
 - It gives insides to application health, performance and availability
 - Stackdriver Logging lets define metrics based on logs. These metrics can be displayed on dashboards 
