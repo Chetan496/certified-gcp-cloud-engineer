@@ -88,7 +88,7 @@
 ## IAM policies
 
 - A policy consists of a list of bindings
-- A binding binds a lost of members to a role
+- A binding binds a list of members to a role
 - A role is a named of list o permissions defined by IAM
 - Child policies can not restrict access granted at the parent level
 
