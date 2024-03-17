@@ -12,8 +12,8 @@
 ## Deployment manager:
 It is IAC service native to Google cloud platform. You can define IAC code in YAML or Python template files.
 
-You can also add a -preview to the deployment manager to preview what changes its going to do.
-Aside: One advantage of using google cdn is you get SEO automatically
+You can also add a -preview to the deployment manager to preview what changes its going to do.   
+Aside: One advantage of using google cdn is you get SEO automatically   
 Also refer for [cloud foundation toolkit](https://cloud.google.com/foundation-toolkit) to understand about the deployment best practices across different environments.
 
 
