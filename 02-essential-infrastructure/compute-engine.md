@@ -1,7 +1,7 @@
 # Compute Engine
 
 - Infrastructure as a Service (IaaS)
-- Offers predefined or custom virtual machine types. We can chose the:
+- Offers predefined or custom virtual machine types. We can chose these:
     - vCPU (cores) and Memory (RAM)
     - Storage:
         - Zonal or regional persistent HDD or SSD
