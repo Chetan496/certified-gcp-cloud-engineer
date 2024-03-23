@@ -16,6 +16,7 @@
     - [Compute Engine](02-essential-infrastructure/compute-engine.md)
     - [Cloud Run](02-essential-infrastructure/cloud-run.md)
     - [Cloud Functions](02-essential-infrastructure/cloud-functions.md)
+    - [Cloud Run vs Cloud Functions](02-essential-infrastructure/cloudrun-compare-cloudfunctions.md)
     - [Cloud IAM](02-essential-infrastructure/iam.md)
     - [Cloud Storage](02-essential-infrastructure/cloud-storage.md)
     - [Filestore](02-essential-infrastructure/filestore.md)
