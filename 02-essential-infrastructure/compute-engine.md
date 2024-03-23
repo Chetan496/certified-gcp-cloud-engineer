@@ -14,12 +14,12 @@
 ## Accessing VMs
 
 - The creator of the VM has full root access
-- On Linux, the creator SSH access. Access can be granted to other users
+- On Linux, the creator has SSH access. Access can be granted to other users
 - On Windows, the creator use the cloud console to create an username and password. These can be used for Remote Desktop Access (RDP) connectivity
 
 ## Instance States
 
-- Sates are as follows:
+- States are as follows:
     - Provisioning
     - Staging: IP Addresses are acquired, system image is booted
     - Running: pre-configured startup scripts are running at the startup
@@ -86,20 +86,20 @@
     - **Compute Engine Security Admin Users**: with this role can create, modify, and delete SSL certificates and firewall rules
     - **Compute Engine Viewer Users**: with this role can get and list Compute Engine resources but cannot read data from those resources
 
-## Preemtible VMs
+## Preemptible VMs
 
-- Instances, which we can create a run at a lower cost (up to 80%)
-- These VMs might be terminated at any time
+- Instances, which we can create run at a lower cost (up to 80%)
+- These VMs might be terminated at any time by Google cloud
 - There is no charge if the instance is terminated in the first minute
 - They can live at most 24 hours
 - There is a 30 seconds termination warning, but there is no guarantee that the termination script will run successfully
-- There are no live migrations and no automatic restarts for preemtible VMs
-- We can create monitoring and load-balancers to start up preemtible instances
+- There are no live migrations and no automatic restarts for preemptible VMs
+- We can create monitoring and load-balancers to start up preemptible instances
 
 ## Sole-tenant Nodes
 
 - They are physical compute engine servers dedicated to host VM instances only for our VMs
-- We can sole-tenant nodes to keep our VMs physically separated from VMs in other projects, or to group your VMs together on the same host hardware
+- We can use sole-tenant nodes to keep our VMs physically separated from VMs in other projects, or to group your VMs together on the same host hardware
 - Provides the ability to bring CPU-bound licenses to the cloud
 - A Sole-tenant node is a physical Compute Engine server that is dedicated to hosting only your project's VMs
 - The following types of workloads might benefit from using sole-tenant nodes:
@@ -114,7 +114,7 @@
 
 ## Shielded VMs
 
-- Offer verifiable integrate to VMs instances
+- Offer verifiable integrity to VMs instances
 - First offering in the Shielded Cloud initiative
 - Offers virtual trusted platform module (vTPM)
 
@@ -152,7 +152,7 @@
         - They can be HDD (magnetic) or SSD options
         - They can be resized even when running an attached
         - They can be attached in read-only mode to multiple VMs
-        - Zonal disks: efficient, reliable bloc storage
+        - Zonal disks: efficient, reliable block storage
         - Regional disks: active-active replication across 2 zones in the same region
         - Disk types:
             - pd-standard (HDD)
@@ -193,7 +193,7 @@
 - Snapshots:
     - Stored in cloud storage, used to backup data and move VMs between regions
     - Snapshots can be used to transfer data between different disk types
-    - Snapshots are not available for local SSD
+    - Snapshots are **not available for local SSD**
     - Snapshots are incremental and automatically compressed
 - Resize persistent disks:
     - Can be achieved even when a disk is attached to a running VM
