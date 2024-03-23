@@ -43,7 +43,17 @@
         - It lets us create web based notebooks containing Python code
         - We only pay for the resources used for the compute
         - Data can be visualized with Google Charts of Matplotlib
-
+    - Cloud data fusion:
+        - Fully managed data integration service by Google Cloud
+        - Visual interface for building ETL pipelines without code
+        - Pre-built connectors for various data sources
+        - Supports hybrid and multi-cloud deployments
+        - Scalable and high-performance processing
+        - Integrates with Google Cloud services like BigQuery and Dataflow
+        - Includes data transformation and cleansing functionalities
+        - Monitoring, management, and security features
+        - Cost-effective pay-as-you-go pricing model
+        
 ## Cloud Machine Learning Platform
 
 - Google Machine learning solutions as a managed service
