@@ -1,21 +1,24 @@
 # VPC - Virtual Private Cloud
 
-- Projects are the key organizer of infrastructure resources in Google Cloud
+- Projects are the key organizer of infrastructure resources in Google Cloud. Prior to VPCs there were legacy networks which are now deprecated
+- A project can contain multiple VPC networks
 - The default quota for each project is 5 networks
-- Networks can be shared or peered with other networks
-- These networks do not have IP ranges. Google Cloud networks are global and span across all available regions
-- Inside networks we can segregate resources in subnetworks
+- VPC Networks can be shared or peered with other networks
+- These VPC networks do not have IP ranges(whereas AWS VPC networks have IP ranges). Google Cloud networks are global and span across all available regions
+- Inside networks we can segregate resources in subnetworks. Subnets and subnetworks refer to the same term
 - There are 3 types of networks:
     - Default: every project is provided with a default network. This network has a subnet in each region with non-overlapping CIDR ranges and default firewall rules (SSH, RDP, ICMP from anywhere and egress traffic to anywhere)
     - Auto: one subnet for each region is automatically created in it. These subnets usa a /20 mask which can be expanded up to a /16 mask. All this subnets fit in the 10.0.0.0/9 CIDR block. If new region become available, new subnets are added to the network
     - Custom: does not automatically create subnets. We are fully in control about the IP ranges for the subnets, region where they are created
 - An auto-mod network can be converted to custom, but not vice-versa
-- Subnets works at a regional scale. Subnets can cross zones
+- Subnets works at a regional scale. Subnets can cross zones.
+- Subnets are regional resources
 - Subnets are assigned an IP range. The first and second addresses from the range are reserved for the network and subnet gateway
 - Other reserved addresses are the second to last and the last addresses (broadcast IP addresses)
 - Subnets can be extended without any downtime. They cannot shrink
 - In case of extension the new subnet mask should not overlap with any other subnet range from the network
 - Auto mode subnets can be extended from /20 to /16
+- Dual stack subnets - means subnets who have both IPV4 and IPV6 address ranges. Compute instances can also be given both the address ranges
 
 ## IP Addresses
 
@@ -55,9 +58,9 @@
 ## Routes and Firewalls
 
 - By default every network has:
-    - Routes that let instances in a network send traffic directly to each other
-    - A default route that directs packets to destinations tha are outside of the network
-- The default network firewall rules configured to allow instances ona network talk to each other. Manually created networks do not have such rules
+    - Routes that let instances in a network send traffic directly connect to each other
+    - A default route that directs packets to destinations that are outside of the network
+- The default network firewall rules configured to allow instances on a network talk to each other. Manually created networks do not have such rules
 - Instance routing tables:
     - Each route in the routes collection may apply to one or more instances
     - A route applies to an instance if the network and the instance tag match with the rule
