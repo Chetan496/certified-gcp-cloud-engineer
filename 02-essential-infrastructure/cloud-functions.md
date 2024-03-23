@@ -16,6 +16,21 @@
     - Java
     - .NET
     - Ruby
+ 
+## Cloud Functions V1 vs Cloud Functions V2
+
+| Feature                | Cloud Functions V1                                  | Cloud Functions V2                             |
+|------------------------|-----------------------------------------------------|------------------------------------------------|
+| Runtime Environment    | Uses Node.js, Python, and Go runtimes              | Adds support for additional runtimes like Ruby, Java, .NET |
+| Networking             | Limited to HTTP(S) triggers                        | Adds support for Eventarc for event-driven architecture |
+| Stateful Functions     | Stateless functions only                           | Adds support for stateful functions with stateful invocations |
+| Execution Environment | Runs on Google-managed infrastructure              | Offers choice between Google-managed or self-managed infrastructure |
+| Dependency Management  | Manually manage dependencies                       | Supports dependency management with built-in package managers |
+| Scaling                | Automatic scaling based on incoming traffic        | Introduces new scaling options and customization |
+| Timeout                | Maximum configurable timeout of 540 seconds        | Maximum configurable timeout of 540 seconds for HTTP functions, and 5400 seconds for non-HTTP functions |
+| Pricing Model          | Based on execution time and resources consumed     | Similar pricing model, but may differ for certain features |
+| Event Sources          | Limited event sources (HTTP, Pub/Sub, Cloud Storage) | Expands support for various event sources and integrations |
+
     - Python
     - Go
     - .NET Core
