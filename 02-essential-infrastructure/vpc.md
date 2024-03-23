@@ -4,7 +4,7 @@
 - A project can contain multiple VPC networks
 - The default quota for each project is 5 networks
 - VPC Networks can be shared or peered with other networks
-- These VPC networks do not have IP ranges(whereas AWS VPC networks have IP ranges). Google Cloud networks are global and span across all available regions
+- These VPC networks do not have IP ranges(whereas AWS VPC networks have IP ranges). Google Cloud networks are global and span across all available regions (whereas AWS VPC networks are regional)
 - Inside networks we can segregate resources in subnetworks. Subnets and subnetworks refer to the same term
 - There are 3 types of networks:
     - Default: every project is provided with a default network. This network has a subnet in each region with non-overlapping CIDR ranges and default firewall rules (SSH, RDP, ICMP from anywhere and egress traffic to anywhere)
