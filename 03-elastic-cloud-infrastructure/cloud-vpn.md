@@ -1,6 +1,6 @@
 # Cloud VPN
 
-- Security connects on-premises network to the GCP VPC network
+- Securely connects on-premises network to the GCP VPC network
 - Traffic traveling between the two network is encrypted
 - Useful for low-volume data connections
 - Provides 99.9% SLA and supports the following:
