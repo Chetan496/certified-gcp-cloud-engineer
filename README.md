@@ -18,6 +18,7 @@
     - [Cloud Functions](02-essential-infrastructure/cloud-functions.md)
     - [Cloud Run vs Cloud Functions](02-essential-infrastructure/cloudrun-compare-cloudfunctions.md)
     - [Cloud IAM](02-essential-infrastructure/iam.md)
+    - [S3 Access using ACL vs S3 Access using IAM](02-essential-infrastructure/s3-access-list-iam.md)
     - [Cloud Storage](02-essential-infrastructure/cloud-storage.md)
     - [Filestore](02-essential-infrastructure/filestore.md)
     - [Databases](02-essential-infrastructure/databases.md)
