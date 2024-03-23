@@ -116,3 +116,18 @@
     - Proxy based, regional, private load balancer
     - Layer 7 load balancer, can handle HTTP, HTTPS and HTTP/2 protocols
     - It is based on open source Envoy proxy
+
+**Google Cloud Load Balancing**: 
+   - **HTTP(S) Load Balancing**: Distributes HTTP and HTTPS traffic among instances or services globally. It provides SSL termination, content-based routing, and autoscaling capabilities.
+   - **TCP/SSL Proxy Load Balancing**: Distributes TCP and SSL traffic based on port numbers. It terminates SSL connections and forwards TCP traffic directly to the backend instances.
+   - **Internal TCP/UDP Load Balancing**: Distributes TCP and UDP traffic coming from the internal network of Google Cloud VPCs to the backend instances.
+   - **Network Load Balancing**: Distributes TCP and UDP traffic from the internet to instances in multiple regions. It operates at the connection level (Layer 4) and is suitable for high-performance, non-HTTP workloads.
+
+2. **Google Cloud Armor**: Provides protection against DDoS attacks, application vulnerabilities, and other threats. It integrates with HTTP(S) Load Balancing.
+
+3. **SSL Proxy Load Balancing**: Terminates SSL/TLS connections at the load balancer and forwards unencrypted traffic to the backend instances.
+
+4. **Regional Managed Instance Groups (MIGs)**: Used with HTTP(S) Load Balancing to manage and scale groups of virtual machine instances within a single region.
+
+5. **Network Endpoint Groups (NEGs)**: Group backend instances and IP addresses into endpoints for use with external HTTP(S) Load Balancing.
+
