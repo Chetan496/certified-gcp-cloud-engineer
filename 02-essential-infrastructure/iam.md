@@ -17,7 +17,7 @@
 - Root node of the IAM hierarchy
 - Organization roles:
     - Organization Admin: control over all cloud resources, useful for auditing
-    - Project creator: controls project creation, control over who can create projects
+    - Project creator: controls project creation, control over who can create projects. Project creator can also delete all resources in a project
 - Organization resource is closely associated with G Suite or Cloud Identity account
 - When an user with a G Suite or Cloud Identity account creates GCP project an organization resource is automatically provisioned to them
 - Workspace or Cloud Identity super administrator responsibilities are:
@@ -89,7 +89,7 @@
 
 - A policy consists of a list of bindings
 - A binding binds a list of members to a role
-- A role is a named of list o permissions defined by IAM
+- A role is a namd list of permissions defined by IAM
 - Child policies can not restrict access granted at the parent level
 
 ## IAM Conditions
