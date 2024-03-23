@@ -16,11 +16,11 @@
     - Multi-regional: high performance object storage, it is geo-redundant storage, data is stored in at least two regions which are geographically separated by at least 140 km, Availability SLA: 99.95%
     - Regional: high performance object storage, let's us storage in a bucket in a specific region. It is cheaper than multi-regional storage, but it offers less redundance. SLA: Availability 99.9% 
     - Nearline: backup object storage, used for storing infrequently accessed data. It is better suited for scenarios when data is read/modified once a month or less. Availability SLA: 99.00%
-    - Coldline: backup object storage, very low cost storage recommended for data archiving, online backup and disaster recovery. It is the best choice for data planned to access at most once per year. It has a 90 day minimum storage duration. I has cost per data access and higher per operation cost on data. Availability SLA: 99.00%
+    - Coldline: backup object storage, very low cost storage recommended for data archiving, online backup and disaster recovery. It is the best choice for data planned to access at most once per year. It has a 90 day minimum storage duration. It has cost per data access and higher per operation cost on data. Availability SLA: 99.00%
 - Storage price is based on the size of data, multi-regional storage class has the highest cost, while coldline class offers the lowest cost
-- Nearline storage includes an access free for GB per data read, Coldline storage incurres a higher fee for GB per data read
+- Nearline storage includes an access fee for GB per data read, Coldline storage incurres a higher fee for GB per data read
 - Bring data into the cloud:
-    - Online transfer: gsutil tool, upload and access dat from the command line
+    - Online transfer: gsutil tool, upload and access data from the command line
     - Storage Transfer Service: lets manage scheduled batch data imports for other cloud services, from a different region or from a HTTPS endpoint
     - Transfer Appliance: rackable appliance to securly ship data
 
@@ -35,7 +35,7 @@
 ## Cloud SQL
 
 - It is a relational database as a service
-- Offers MySQL and PostgreSQLBeta database engines as a fully managed service
+- Offers MySQL ,Postgre and SQLServer database engines as a fully managed service
 - Cloud SQL provides several replica services: read, failover and external replicas
 - Cloud SQL can replicate data between multiple zones with automatic failover
 - It provides on-demand and scheduled backups
@@ -43,7 +43,8 @@
 
 ## Cloud Spanner
 
-- It provides SQL queries
+- globally distributed, horizontally scalable, and strongly consistent relational database. It is designed to handle large-scale, mission-critical transactional workloads with low latency
+- allows you to replicate data globally across multiple regions
 - Offer transactional consistency at a global scale
 - It has schemas and automatic synchronous replication for HA
 - It can provides petabytes of capacity
