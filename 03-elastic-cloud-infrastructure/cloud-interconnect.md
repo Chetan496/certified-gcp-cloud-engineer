@@ -11,7 +11,7 @@
 
 - Provides direct physical connections between on-premises networks and Google's networks
 - Enables transfer of large amount of data between on-premises and GCP
-- For using it we nee to provision a Cross Connect between on-premises router and Google Network in a common colocation facility
+- For using it we need to provision a Cross Connect between on-premises router and Google Network in a common colocation facility
 - Dedicated Interconnect can be configured to provide a 99.9% or 99.999% SLA
 - In order to use Dedicated Interconnect, our own network has to physically meet Google's network in a supported colocation facility
 
@@ -32,6 +32,19 @@
 - Partner Interconnect:
     - Dedicated bandwidth connections to VPC network through a service provider
     - 50 Mbps - 10 Gbps per connection
+
+| Feature                   | Google Cloud Interconnect                                | Cloud VPN                                            |
+|---------------------------|----------------------------------------------------------|------------------------------------------------------|
+| Connection Type           | Dedicated physical connection between on-premises network and Google Cloud network | Encrypted virtual connection over the public internet |
+| Latency                   | Typically offers lower latency compared to VPN           | May have higher latency due to internet routing      |
+| Bandwidth                 | Offers higher bandwidth options, ranging from 50 Mbps to 100 Gbps | Bandwidth depends on internet connection speed       |
+| Security                  | Provides a private, dedicated connection, often considered more secure | Encrypts traffic over the public internet, offering security but less isolation |
+| Redundancy                | Offers options for redundant connections and high availability configurations | Redundancy may be achieved through multiple VPN tunnels |
+| Data Transfer Cost        | May incur costs for the dedicated connection and data transfer | Generally incurs lower data transfer costs compared to Interconnect |
+| Complexity                | Requires setup of physical infrastructure and configuration of connection settings | Relatively simpler setup and configuration compared to Interconnect |
+| Use Cases                 | Ideal for high-throughput, low-latency workloads requiring dedicated connectivity | Suitable for smaller workloads, temporary connections, or scenarios where physical connectivity is not feasible |
+| Compliance Requirements   | Suitable for industries with stringent compliance requirements due to dedicated connection | May require additional security measures for compliance in regulated industries |
+
 
 ## Direct Peering
 
