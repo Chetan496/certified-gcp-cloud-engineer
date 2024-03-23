@@ -2,7 +2,7 @@
 
 ## Google Cloud Big Data Services
 
-- They are serverless services, managed buy Google
+- They are serverless services, managed by Google
 - Services:
     - Cloud Dataproc (managed Hadoop):
         - Is an open-source framework for big data
@@ -11,11 +11,11 @@
         - A cluster can be created in 90 seconds or less
         - We can scale up and down jobs on the fly
         - We pay only for hardware resources used during the life of the cluster (billing is done down to second)
-        - We can save money be using preemptible compute instances (up to 80% cheaper)
+        - We can save money by using preemptible compute instances (up to 80% cheaper)
     - Cloud Dataflow:
         - It is an unified programming model and managed service
         - It can be used for ETL, batch processing, stream processing
-        - We used Dataflow to create data pipelines used for batch processing a streaming purposes
+        - We use Dataflow to create data pipelines used for batch processing and streaming purposes
         - Orchestration: we can create pipelines that coordinate services, including external services
         - Dataflow integrates with Cloud Storage, Pub/Sub, BigQuery and BigTable
     - BigQuery:
@@ -28,12 +28,16 @@
         - Provides automatic discount for long-term data storage (after 90 days)
     - Cloud Pub/Subs:
         - It is meant to serve as a simple, reliable, scalable foundation for stream analytics
-        - Pub: publisher, sub: subscriber
-        - Receiving messages does have to synchronous
+        - Publishers and subscribers are completely decoupled, meaning they don't need to know about each other's existence or location. This allows for loose coupling and independent scaling of publishers and subscribers
+        - Subscribers don't continuously receive messages; instead, they pull (poll) messages from their subscriptions asynchronously, either manually or through a configured pull schedule.
+        - Cloud Pub/Sub supports push subscriptions, where messages are pushed to a webhook or Cloud Function asynchronously as they become available, without the subscriber actively polling for messages
+        - Cloud Pub/Sub guarantees at-least-once delivery of messages, ensuring that no message is lost, even in the event of failures or restarts.
+        - While Cloud Pub/Sub provides ordering guarantees for messages within the same publisher, the order in which subscribers receive messages is not guaranteed, as subscribers can process messages at different rates.
         - It is great for decoupling systems
         - It is designed to provide at least once delivery at low latency (some messages might be deliver more than once)
         - It is recommended to be used of systems where data arrives at high and unpredictable rates (example IOT)
         - We can configure subscribers to receive messages on a push or pull basis
+        - asynchronous messaging architecture is particularly useful in scenarios such as event-driven architectures, real-time data processing pipelines, and distributed microservices-based applications, where components need to communicate and exchange data in a decoupled and reliable manner.
     - Cloud Datalab:
         - Built on project Jupyter, it provides managed lab notebooks
         - It lets us create web based notebooks containing Python code
