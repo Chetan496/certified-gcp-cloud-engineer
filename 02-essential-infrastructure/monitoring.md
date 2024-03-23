@@ -15,7 +15,7 @@
 
 ## Stackdriver Monitoring
 
-- Is at the base os SRE
+- Is at the base of SRE
 - It dynamically configures monitoring after resources are deployed
 - Allows us to monitor platform, systems an application metrics
 - Workspace:
@@ -30,7 +30,7 @@
 ## Stackdriver Logging
 
 - Allows us to store, search, analyze and alert on log data on events from GCP and AWS
-- Logging includes storage for logs, an user interface Logs Viewer and an API to manage logs programmatically
+- Logging includes storage for logs, a user interface for Logs Viewer and an API to manage logs programmatically
 - Logs are retained for 30 days, we can export logs into Cloud Storage, BigQuery and Cloud Pub/Sub
 - Logging Agent: can be installed on VM instances for gathering logs
 
@@ -39,7 +39,7 @@
 - Counts, analyzes and aggregates errors for running cloud services
 - Provides a centralized error management interface
 
-## Stackdriver Trace
+## Stackdriver Trace(CloudTrace)
 
 - It is a distributed tracing system that collects latency data from application systems and generates in-depth latency reports
 - Can collect data from App Engine, Google HTTP(S) load balances and applications implementing Cloud Trace SDKs
