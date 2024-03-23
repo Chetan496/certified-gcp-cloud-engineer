@@ -14,7 +14,7 @@
 - Cloud SQL high performance and scalability:
     - Up to 64 TB of storage
     - Up to 60_000 IOPS
-    - Up to 624 GB or RAM per instance
+    - Up to 624 GB of RAM per instance
     - Ability to scale out with read replicas
 - Other Cloud SQL services:
     - HA configuration: primary-standby instances with synchronous replications
@@ -41,11 +41,11 @@
     - Cloud Spanner replicates data in N cloud zones (on region or several regions)
     - Replication of data is synchronized through Google's global network
     - Uses atomic clocks to ensure atomicity
-- Recommended when our data outgrown a traditional relational database
+- Recommended when our data has outgrown a traditional relational database
 
 ## Firestore
 
-- It is a fast, fully managed, serverless, NoSQL document database
+- It is a fast, fully managed, serverless, NoSQL document database (like MongoDB)
 - Simplifies storing, syncing and querying data for mobile, web and IoT data at global scale
 - Client libraries provide live synchronization and offline support
 - Supports ACID transactions
@@ -53,7 +53,7 @@
 - It offer a powerful querying engine
 - Firestore is the next generation of Cloud Datastore. Firestore can operate in Datastore mode making it backwards compatible with Datastore
 - Firestore removes some Datastore limitations such as:
-    - Queries are no long eventually consistent
+    - Queries are no longer eventually consistent
     - Transactions are no longer limited to 25 entity groups
     - Writes per entity are no longer limited to 1 per second
 - Firestore in Native mode introduces the following features:
@@ -66,9 +66,9 @@
     - Use Firestore in Native mode for mobile and web apps
 
 ## Cloud Bigtable
-
-- It is a fully managed NoSQL bit data database with petabyte-scale and very low latency
-- It seamlessly sells for throughput
+- It is a columnar database. It is also wide columnar database. Makes it suitable for analytics queries
+- It is a fully managed NoSQL big data database with petabyte-scale and very low latency
+- It seamlessly scales for throughput
 - Ideal for Ad Tech, Fintech and IoT because supports high read and write throughput with low latency
 - It a great storage engine for ML applications
 - It integrates with open source big data tools such as Hadoop, Cloud Dataflow and Cloud Dataproc
@@ -76,15 +76,15 @@
 - Cloud Bigtable stores data in massively scalable tables, each of which is sorted key-value map
 - Table are composed of rows describing a single entity and columns
 - Each row is indexed with a single row key
-- Columns which do relate to each other are grouped together in column families
+- Columns which relate to each other are grouped together in column families
 - Each column is identified by a combination of column family and column quantifier
 - Cloud Bigtable tables are sparse
 - Tables are sharded into blocks of contiguous rows, called tablets
-- Tablets are similar to HBase regions
-- Bigtables learns to adjust to certain access patterns
+- Tables are similar to HBase regions
+- Bigtable learns to adjust to certain access patterns
 
 ## Cloud Memorystore
 
 - It is a fully managed Redis service used for in-memory data storage
-- It automates complex tasks such as: HA, failover, patches and monitoring
+- It automates complex tasks like: HA, failover, patches and monitoring
 - The instance running Redis can be configured with 1GB to 300GB of memory
