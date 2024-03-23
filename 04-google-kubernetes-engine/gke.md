@@ -20,8 +20,8 @@
 
 - A cluster is the foundation of GKE
 - In GKE a cluster consists of at least one control plane and one ore more worker nodes
-- A control plane manages the state of the cluster and it insures that it is at the desired state
-- The control plane is responsible for scheduling and management of nodes. It also managed network and storage resources of those workloads
+- A control plane manages the state of the cluster and it ensures that it is at the desired state
+- The control plane is responsible for scheduling and management of nodes. It also manages network and storage resources of those workloads
 - The control plane makes sure the cluster is in the desired state
 - Nodes are compute engine VM instances create by GKE on our behalf
 - Each node is managed from the control plane
@@ -48,7 +48,7 @@
     - It can contain one or multiple nodes
     - Custom node pools: useful for pods that require more resources
     - Any configuration changes affect the whole node pool
-    - Any existing node pool can manually or automatically upgraded to the latest version of configurations
+    - Any existing node pool can manually or automatically be upgraded to the latest version of configurations
 - GKE Cluster types:
     - Zonal Cluster:
         - They have a single control plane in a single nodes
@@ -58,9 +58,9 @@
         - They consume more compute resources because of replication
     - Private Cluster:
         - Network traffic is isolated to the cluster only
-        - For outbound connectivity we can use Cloud NAT or we can managed our own gateway
+        - For outbound connectivity we can use Cloud NAT or we can manage our own gateway
         - In private cluster the control planes VPC network is connected to our GKE VPC with VPC peering
-        - The control for a private cluster has a private and a public endpoint as well. Public endpoint can be disabled
+        - The control plane for a private cluster has a private and a public endpoint as well. Public endpoint can be disabled
 - Cluster Version: 
     - It is recommended to have auto-upgrade enabled for the cluster
     - If it is enabled we can chose between Release Channels. They can be the following:
@@ -68,7 +68,7 @@
         - Regular (default): we get the latest k8s features 2-3 months after the Rapid release
         - Stable: changes are rolled last, after being validated 2-3 months in the Regular channel
     - Specific Version:
-        - If we need a specific version of k8s, we can choose that the cluster creation
+        - If we need a specific version of k8s, we can choose that at the cluster creation
 - Cluster Upgrades:
     - Control planes and nodes do not always run the same version at all times
     - A control plane is always upgraded before its nodes
