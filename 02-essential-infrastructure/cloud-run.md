@@ -1,7 +1,7 @@
 # Cloud Run
 
 - Cloud Run is a managed compute platform that lets us run containers directly on top of Google's scalable infrastructure
-- On Cloud Run, we code can either run continuously as a service or as a job. Both services and jobs run in the same environment and can use the same integrations with other services on Google Cloud:
+- On Cloud Run, the code can either run continuously as a service or as a job. Both services and jobs run in the same environment and can use the same integrations with other services on Google Cloud:
     - **Cloud Run services**: used to run code that responds to web requests, or events
     - **Cloud Run jobs**: used to run code that performs work (a job) and quits when the work is done
 
