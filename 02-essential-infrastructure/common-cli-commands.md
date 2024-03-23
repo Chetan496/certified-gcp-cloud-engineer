@@ -75,3 +75,30 @@
 38. **kubectl get services**: List all services in a Kubernetes cluster.
 
 39. **kubectl describe pod [POD_NAME]**: Describe a specific pod in a Kubernetes cluster.
+
+## Interacting with Cloud SQL and BigQuery
+- **gcloud bigquery datasets list**: List all datasets in the default project.
+
+- **gcloud bigquery datasets describe [DATASET_ID]**: Describe a specific dataset in BigQuery.
+
+- **bq ls [PROJECT_ID]:[DATASET_ID]**: List all tables in a dataset using the BigQuery command-line tool (bq).
+
+- **bq show [PROJECT_ID]:[DATASET_ID].[TABLE_ID]**: Describe a specific table in BigQuery using the BigQuery command-line tool (bq).
+
+- **bq query --use_legacy_sql=false '[SQL_QUERY]'**: Run a SQL query against BigQuery using the BigQuery command-line tool (bq).
+
+- **gcloud sql instances list**: List all Cloud SQL instances in the default project.
+
+- **gcloud sql instances describe [INSTANCE_NAME]**: Describe a specific Cloud SQL instance.
+
+- **gcloud sql databases list --instance=[INSTANCE_NAME]**: List all databases in a Cloud SQL instance.
+
+- **gcloud sql databases describe [DATABASE_NAME] --instance=[INSTANCE_NAME]**: Describe a specific database in a Cloud SQL instance.
+
+- **gcloud sql users list --instance=[INSTANCE_NAME]**: List all users in a Cloud SQL instance.
+
+- **gcloud sql users describe [USERNAME] --instance=[INSTANCE_NAME]**: Describe a specific user in a Cloud SQL instance.
+
+- **gcloud sql connect [INSTANCE_NAME]**: Connect to a Cloud SQL instance using the MySQL client.
+
+- **gcloud sql connect [INSTANCE_NAME] --user=[USERNAME]**: Connect to a Cloud SQL instance using a specific user.
