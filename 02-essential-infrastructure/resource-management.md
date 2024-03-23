@@ -13,7 +13,7 @@
 
 ## Quotas
 
-- All resources al subject to project quotas or limits
+- All resources are subject to project quotas or limits
 - Example of quotas:
     - How many resources can we create per project (15 VPCs per project)
     - How quickly we can make API requests (5 administrative access per project)
@@ -58,7 +58,7 @@
     - We can export and query cost and spending information into BigQuery. We can visualize this data using Data Studio
 - Quotas:
     - Designed to prevent over-consuming of resources because of an error or malicious attack
-    - They do apply a the level o project
+    - They apply at the level of a project, so quoates are at project level
     - We have 2 types of quotas:
         - Rate quota: reset after a period of time
         - Allocation quota: do not reset at interval, we have to free up resources of adhere to these quotas. These quotas can be increased after requesting
