@@ -20,7 +20,7 @@
 - Objects stored in multi-region and dual-region are redundant
 - All data classes offer "eleven nines" of durability SLA (essentially no data loss)
 - Cloud Storage is brocken down to the following components:
-    - Buckets: the cannot be nested. Each bucket requires a globally unique name
+    - Buckets: they cannot be nested. Each bucket requires a globally unique name
     - Objects: no minimum size. They inherit the storage class of the bucket
     - Data access:
         - `gsutil` command line
@@ -90,7 +90,7 @@
 
 ## Data Import Services
 
-- Transfer Appliance: hardware appliance, rack, used to migrate large amount of data. Transfer appliances are shipped to Google Cloud with data on it from on-premises
+- Transfer Appliance: hardware appliance, rack, used to migrate large amount of data. Transfer appliances are shipped to Google Cloud with data on it from on-premises. this is similar to AWS Snowball.
 - Storage Transfer Service: import online data from another bucket or other source
 - Offline Media Import: third-party provider uploads the data from a physical media
 
@@ -116,7 +116,7 @@
 
 ## Uniform Bucket-Level Access
 
--  Read about Uniform Bucket-level Access [here](https://cloud.google.com/storage/docs/uniform-bucket-level-access)
+- Read about Uniform Bucket-level Access [here](https://cloud.google.com/storage/docs/uniform-bucket-level-access)
 - In order to support a uniform permissioning system, Cloud Storage has uniform bucket-level access
 - Using this feature on a bucket disables ACLs for all Cloud Storage resources in the bucket; access to Cloud Storage resources then is granted exclusively through IAM
 - After you enable uniform bucket-level access, you can reverse your decision for 90 days
