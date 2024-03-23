@@ -49,9 +49,11 @@
     - **Billing Account Viewer**: enables a user to view billing account cost and transactions
 - Budgets:
     - Budgets can be set at the project level
+    - Only Billing account admin can setup budgets
     - To help with project planning and controlling costs we can set a budget
     - When we exceed a budget limit, we can configure our billing account to send an alert. We can set up a webhook as well for automation
-- Budget Alerts: 
+- Budget Alerts:
+    - Only Billing account admin can setup budget alerts
     - Alerts sent to billing admins after spending exceeds a budget percentage or a specified amount
     - In addition to email, we can use Pub/Sub to programmatically listen to budget alerts
 - Reports:
