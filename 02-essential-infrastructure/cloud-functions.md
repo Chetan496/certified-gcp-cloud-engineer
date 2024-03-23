@@ -16,6 +16,9 @@
     - Java
     - .NET
     - Ruby
+    - Python
+    - Go
+    - .NET Core
  
 ## Cloud Functions V1 vs Cloud Functions V2
 
@@ -31,6 +34,4 @@
 | Pricing Model          | Based on execution time and resources consumed     | Similar pricing model, but may differ for certain features |
 | Event Sources          | Limited event sources (HTTP, Pub/Sub, Cloud Storage) | Expands support for various event sources and integrations |
 
-    - Python
-    - Go
-    - .NET Core
+
