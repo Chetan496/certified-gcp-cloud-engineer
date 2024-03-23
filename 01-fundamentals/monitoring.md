@@ -19,5 +19,29 @@ Core components:
  - Log buckets (organizing and managing logs)
  - Log viewers (filtering and searching logs)
  - Log routing (sending logs to specific destinations)
+
+ ## Log Sinks
+  - Mechanism for exporting logs to different destinations
+  - Destinations include:
+     - Cloud Storage buckets
+     - BigQuery datasets
+     - Pub/Sub topics
+     - Third-party services (via webhooks)
+  - Allows log data to be processed, analyzed, or archived
+  - Can filter logs based on various criteria (e.g., log type, severity, resource)
+  - Supports real-time or batched export of logs
+
+## Log Routing
+ - Allows routing log entries to different destinations based on specific criteria
+ - Destinations include Log buckets, Log sinks, Exclusions
+ - Routing criteria can be based on log entry metadata (like severity or resource type) or log entry content
+ - Enables separating logs for different purposes (e.g., debugging, security, compliance)
+ - Multiple routing rules can be defined with different priorities
+ - Supports advanced filtering and log processing capabilities
+ - Can be managed via Cloud Console, gcloud, or Logging API
+   
+
+
+ 
  - Log exclusions (excluding certain log entries)
 
