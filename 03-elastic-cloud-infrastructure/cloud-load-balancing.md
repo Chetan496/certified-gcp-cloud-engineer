@@ -52,7 +52,7 @@
         - A capacity scaler (ceiling % of CPU/Rate targets)
 - HTTPS load balancer:
     - Uses a target HTTPS proxy
-    - Requires at least on signed SSL certificate installed on the target HTTPS proxy (target proxy can have up to 15 SSL certificates)
+    - Requires at least one signed SSL certificate installed on the target HTTPS proxy (target proxy can have up to 15 SSL certificates)
     - Client SSL session terminates at the load balancer
     - Supports the QUIC transport layer protocol
 - Backed bucket:
@@ -73,7 +73,7 @@
 - The instances can be in multiple regions, the traffic is redirected to the closes one
 - Supports both IPv4 and IPv6
 - Provided features:
-    - Intelligent routing: can route requests to backend locations where is capacity
+    - Intelligent routing: can route requests to backend locations where there is capacity
     - Certificate management
     - Security patching
     - SSL policies
@@ -84,7 +84,7 @@
 - Terminates connections at the load balancing layer and then forwards traffic to the closest backend
 - Supports both IPv4 and IPv6
 - Provided features:
-    - Intelligent routing: can route requests to backend locations where is capacity
+    - Intelligent routing: can route requests to backend locations where there is capacity
     - Security patching
 
 ## Network Load Balancing
