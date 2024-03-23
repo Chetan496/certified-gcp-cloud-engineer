@@ -32,6 +32,8 @@
 - Partner Interconnect:
     - Dedicated bandwidth connections to VPC network through a service provider
     - 50 Mbps - 10 Gbps per connection
+ 
+Note: there is no exact equivalent service like AWS Transit Gateway in GCloud. Cloud Interconnect is a bit similar to AWS Transit Gateway (althout AWS Direct connect and Cloud Interconnect are more similar).
 
 | Feature                   | Google Cloud Interconnect                                | Cloud VPN                                            |
 |---------------------------|----------------------------------------------------------|------------------------------------------------------|
