@@ -15,7 +15,7 @@
 - Is a managed service for executing a wide variety of data processing patterns
 - Offers serverless, fully managed data processing
 - Offers batch and stream processing, and it can autoscale to millions of QPS
-- It is using beam, open source programming language
+- It uses Apache Beam, open source programming language
 
 ## Dataprep
 
